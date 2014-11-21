@@ -1,0 +1,24 @@
+
+;; ----- smex-history -----
+(
+ shell
+ eval-buffer
+ package-install
+ clojure-mode-font-lock-setup
+ paredit-mode
+ run-prolog
+ customize-group
+)
+
+;; ----- smex-data -----
+(
+ (eval-buffer . 38)
+ (shell . 5)
+ (ebuffers . 1)
+ (package-install . 17)
+ (cider-jack-in . 1)
+ (customize-group . 1)
+ (run-prolog . 1)
+ (paredit-mode . 1)
+ (clojure-mode-font-lock-setup . 1)
+)

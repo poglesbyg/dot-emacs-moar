@@ -1,0 +1,17 @@
+;; change command to meta,
+(setq mac-option-modifier 'super)
+(setq mac-command-modifier 'meta)
+(setq ns-function-modifier 'hyper)
+
+
+;; I don't need to kill emacs that easily
+;; the mnemonic is C-x REALLY QUIT
+(global-set-key (kbd "C-x r q") 'save-buffers-kill-terminal)
+(global-set-key (kbd "C-x C-c") 'delete-frame)
+
+;; Smart M-x
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+(provide 'key-bindings)

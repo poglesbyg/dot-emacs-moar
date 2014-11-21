@@ -1,0 +1,110 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/resources/public/" . "css/")
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/resources/" . "public/")
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/src/etl/" . "routes/")
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/src/" . "etl/")
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/" . "resources/")
+ ("/Users/poglesbyg/Documents/Book/" . "part_3/")
+ ("/Users/poglesbyg/Documents/" . "Book/")
+ ("/Users/poglesbyg/Dev/clojure-stuff/fun-stuff/src/" . "fun_stuff/")
+ ("/Users/poglesbyg/Dev/clojure-stuff/fun-stuff/" . "src/")
+ ("/Users/poglesbyg/Dev/clojure-stuff/" . "etl/")
+ ("/Users/poglesbyg/Dev/INFO232/" . "INFO132-Oblig2/")
+ ("/Users/poglesbyg/Dev/" . "clojure-stuff/")
+ ("/Users/poglesbyg/" . "Dev/")
+ ("/Users/poglesbyg/.emacs.d/" . "lisp/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/poglesbyg/Dev/clojure-stuff/etl/resources/public/css/"
+ "/Users/poglesbyg/Dev/clojure-stuff/etl/resources/templates/"
+ "/Users/poglesbyg/Dev/clojure-stuff/etl/src/etl/routes/"
+ "/Users/poglesbyg/Dev/clojure-stuff/etl/src/etl/"
+ "/Users/poglesbyg/Dev/clojure-stuff/etl/src/etl/db/"
+ "/Users/poglesbyg/.emacs.d/lisp/"
+ "/Users/poglesbyg/.emacs.d/"
+ "/Users/poglesbyg/Dev/clojure-stuff/etl/"
+ "/Users/poglesbyg/Dev/INFO232/INFO132-Oblig2/"
+ "/Users/poglesbyg/Documents/Book/part_3/"
+ "/Users/poglesbyg/Dev/clojure-stuff/fun-stuff/src/fun_stuff/"
+ "/Users/poglesbyg/Dev/emacs-for-clojure/"
+ "/Users/poglesbyg/.emacs.d/themes/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "screen.css"
+ "home.html"
+ "home.clj"
+ "handler.clj"
+ "core.clj"
+ "key-bindings.el"
+ "init.el"
+ "schema.clj"
+ "project.clj"
+ "oblig2.pl"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/resources/public/css/" (21615 12920 0 0) "screen.css" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/resources/public/" (21615 12920 0 0) "md/" "js/" "img/" "fonts/" "css/" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/resources/templates/" (21615 20931 0 0) "home.html" "base.html" "about.html" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/resources/" (21615 12920 0 0) "templates/" "public/" "log4j.properties" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/src/etl/" (21615 20416 0 0) "util.clj" "session_manager.clj" "routes/" "repl.clj" "middleware.clj" "layout.clj" "handler.clj" "db/" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/src/etl/routes/" (21615 20574 0 0) "home.clj" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/src/etl/db/" (21615 19812 0 0) "schema.clj" "core.clj" "../" "./")
+
+ ("/Users/poglesbyg/.emacs.d/" (21615 19565 0 0) "themes/" "smex-items" "recentf" "places" "lisp/" "init.el~" "init.el" "ido.last" "history" "elpa/" "cider-history" "backups/" "auto-save-list/" ".git/" "../" "./")
+
+ ("/Users/poglesbyg/.emacs.d/lisp/" (21615 19737 0 0) "mac.el" "key-bindings.el" "better-defaults.el" "../" "./")
+
+ ("/Users/poglesbyg/" (21615 12124 0 0) "quicklisp.lisp.asc" "quicklisp.lisp" "quicklisp/" "Public/" "Pictures/" "node_modules/" "New Unity Project/" "Music/" "Movies/" "Library/" "go/" "Downloads/" "Documents/" "Dev/" "Desktop/" "Applications/" ".zshrc" ".zlogin" ".wapi/" ".viminfo" ".Trash/" ".swipl-dir-history/" ".subversion/" ".ssh/" ".slime-history.eld" ".slime/" ".scala_history" ".sbclrc" ".saves/" ".rvm/" ".rnd" ".Rhistory" ".RData" ".Rapp.history" ".python_history" ".psql_history" ".profile" ".overtone/" ".npm/" ".node-gyp/" ".meteorsession" ".meteor/" ".m2/" ".local/" ".lldb/" ".lein/" ".irssi/" ".hy-history" ".htoprc" ".gnupg/" ".gitconfig" ".gem/" ".emacs.d/" ".DS_Store" ".cups/" ".config/" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_profile" ".bash_history" ".android/" "#.e#" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/" (21615 12920 0 0) "whatever/" "website/" "weather/" "seesaw-clock/" "parser/" "overtone/" "learningclojure/" "insane-noises/" "guestbook/" "fun-stuff/" "etl/" ".DS_Store" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/src/" (21615 12920 0 0) "etl/" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/etl/" (21615 12967 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "Procfile" "etl.log" ".lein-env" ".gitignore" "../" "./")
+
+ ("/Users/poglesbyg/Documents/Book/part_3/" (21615 989 0 0) "yoga_girl.rtf" "wasting_sunday.rtf" "waking_up.rtf" "uncertainty.rtf" "training_at_baran.rtf" "the_poke.rtf" "sore_wednesday.rtf" "sleeping_patterns.rtf" "rebounded.rtf" "rainy_sunday.rtf" "monday_at_the_reading_hall.rtf" "listening_to_her_music.md" "is_she_going_to_divorce_me.text" "in_the_station_again.rtf" "hung_over_sunday.rtf" "friday_evening.rtf" "drunk_day_after_halloween.rtf" "down_the_rabbit_hole.rtf" "done_with_laundry.rtf" "blom.rtf" "bad_dream.rtf" "a_writer.rtf" "a_situation.rtf" "a_hole.rtf" "a_good_man.rtf" "a_book.rtf" "#uncertainty.text#" "#listening_to_her_music.rtf#" "../" "./")
+
+ ("/Users/poglesbyg/Dev/INFO232/INFO132-Oblig2/" (21613 58586 0 0) "stedsinfo.txt" "reiseruter-2.txt" "oblig_hvetle.pl" "oblig2.pl" "oblig-2.pdf" "lesFil.pl" "astar.pl" "../" "./")
+
+ ("/Users/poglesbyg/Documents/" (21610 40304 0 0) "Microsoft User Data/" "DASP106/" "CVPaulGrant.pdf" "CVPaulGrant.docx" "CVKB.pdf" "CVBaran.pdf" "CVBaran.docx" "Book/" "BaranPDF.pdf" "Baran.docx" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/poglesbyg/Documents/Book/" (21578 50014 0 0) "README.md" "part_3/" "part_2/" "part_1/" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/fun-stuff/src/fun_stuff/" (21614 38952 0 0) "core.clj" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/fun-stuff/src/" (21614 38952 0 0) "fun_stuff/" "../" "./")
+
+ ("/Users/poglesbyg/Dev/clojure-stuff/fun-stuff/" (21614 38952 0 0) "test/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".gitignore" "../" "./")
+
+ ("/Users/poglesbyg/Dev/better-defaults/" (21610 15461 0 0) "README.md" ".git/" "../" "./")
+
+ ("/Users/poglesbyg/Dev/INFO232/" (21602 11610 0 0) "work.pl" "tutorial.pl" "something.prolog" "something.pl" "search.pl" "schedule.pl~" "schedule.pl" "oppgavesett4.pl" "oppgavesett3.pl" "oppgavesett2.pl" "oblig1/" "knowledgeBase5.pl" "knowledgeBase4.pl" "knowledgeBase3.pl" "knowledgeBase2.pl" "knowledgeBase1.pl~" "knowledgeBase1.pl" "INFO132-Oblig2/" "crossword.pl" "coloring_map.pl~" "coloring_map.pl" "chapter3.pl" "chapter2.pl" "chapter1.pl~" "chapter1.pl" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/poglesbyg/.emacs.d/themes/" (21612 55375 0 0) "zenburn-theme.el" "tomorrow-theme.el" "tomorrow-night-theme.el" "tomorrow-night-eighties-theme.el" "tomorrow-night-bright-theme.el" "tomorrow-night-blue-theme.el" "color-theme-tomorrow.el~" "color-theme-tomorrow.el" "../" "./")
+
+ ("/Users/poglesbyg/Dev/emacs-for-clojure/" (21612 55530 0 0) "vendor/" "user.el" "tar.sh" "starter-kit.el" "starter-kit-pkg.el" "starter-kit-misc.el" "starter-kit-defuns.el" "README.markdown" "modules/" "init.el" "elpa/" "COPYING" "changelog.md" ".gitignore" ".git/" "../" "./")
+
+ ("/Users/poglesbyg/Dev/" (21612 55238 0 0) "workspace/" "swank-project/" "Something/" "simple-todos/" "scala-stuff/" "rust-stuff/" "ruby-stuff/" "python-stuff/" "MyPlayground.playground/" "lisp/" "INFO232/" "hello/" "go-stuff/" "etl/" "emacs-for-clojure/" "dot-emacs/" "clojure-stuff/" "better-defaults/" ".DS_Store" "../" "./")
+
+ ("/Users/poglesbyg/.emacs.d/elpa/" (21612 44753 0 0) "smex-20141027.245/" "ediprolog-1.0/" "archives/" "../" "./")
+
+ ("/Users/poglesbyg/.emacs.d/elpa/smex-20141027.245/" (21612 44754 0 0) "smex.elc" "smex.el" "smex-pkg.elc" "smex-pkg.el" "smex-autoloads.el~" "smex-autoloads.el" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
