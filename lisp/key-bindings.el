@@ -79,4 +79,8 @@
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
 
+;; yari and ri keybindings
+(defun ri-bind-key ()
+  (local-set-key [f1] 'yari-anything)
+  (add-hook 'ruby-mode-hook 'ri-bind-key))
 (provide 'key-bindings)

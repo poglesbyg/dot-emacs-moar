@@ -12,6 +12,8 @@
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
 (add-to-list 'package-archives
              '("tromey" . "http://tromey.com/elpa/") t)
+(add-to-list 'package-archives
+             '("MELPA" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -24,7 +26,7 @@
   '(;; makes handling lisp expressions much, much easier
     ;; Cheatsheet: http://www.emacswiki.org/emacs/PareditCheatsheet
     paredit
-
+    autopair
     ;; integration with a Clojure REPL
     ;; https://github.com/clojure-emacs/cider
     cider
@@ -59,7 +61,13 @@
     tagedit
 
     ;; git integration
-    magit))
+    magit
+
+    ;; hy-mode
+    hy-mode
+
+    ;; scala-mode
+    scala-mode2))
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
@@ -80,6 +88,13 @@
 ;; elisp files to make things clear
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'better-defaults)
+
+;; ruby on rails
+(setq auto-mode-alist
+      (cons (cons "\\.rb" 'ruby-mode)
+            auto-mode-alist))
+(add-to-list 'load-path "~/.emacs.d/emacs-rails-reloaded")
+(require 'rails-autoload)
 
 ;; Themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
@@ -117,9 +132,27 @@
 (add-hook 'lisp-mode-hook             #'enable-paredit-mode)
 (add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
 (add-hook 'scheme-mode-hook           #'enable-paredit-mode)
+(add-hook 'prolog-mode-hook           #'enable-paredit-mode)
 
 ;; Enable paredit for Clojure
 (add-hook 'clojure-mode-hook 'enable-paredit-mode)
+
+(require 'autopair)
+
+  (defvar autopair-modes '(r-mode ruby-mode))
+  (defun turn-on-autopair-mode () (autopair-mode 1))
+  (dolist (mode autopair-modes) (add-hook (intern (concat (symbol-name mode) "-hook")) 'turn-on-autopair-mode))
+
+  (require 'paredit)
+  (defadvice paredit-mode (around disable-autopairs-around (arg))
+    "Disable autopairs mode if paredit-mode is turned on"
+    ad-do-it
+    (if (null ad-return-value)
+        (autopair-mode 1)
+      (autopair-mode 0)
+      ))
+
+  (ad-activate 'paredit-mode)
 
 ;; This is useful for working with camel-case tokens, like names of
 ;; Java classes (e.g. JavaClassName)
@@ -135,7 +168,7 @@
 (add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
 
 (autoload 'markdown-mode "markdown-mode"
-   "Major mode for editing Markdown files" t)
+  "Major mode for editing Markdown files" t)
 (add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
@@ -173,10 +206,10 @@
 ;; Add Urban Dictionary to webjump (C-x g)
 (eval-after-load "webjump"
   '(add-to-list 'webjump-sites '("Urban Dictionary" .
-                             [simple-query
-                              "www.urbandictionary.com"
-                              "http://www.urbandictionary.com/define.php?term="
-                              ""])))
+                                 [simple-query
+                                  "www.urbandictionary.com"
+                                  "http://www.urbandictionary.com/define.php?term="
+                                  ""])))
 
 ;; Fix whitespace on save, but only if the file was clean
 (global-whitespace-cleanup-mode)
@@ -200,3 +233,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+;; Hy
+(add-to-list 'load-path "~/.emacs.d/hy-mode")
+(require 'hy-mode)
+(add-to-list 'auto-mode-alist '("\\.hy\\'" . hy-mode))
+
+;; Scala
+(add-to-list 'load-path "~/.emacs.d/scala-mode")
+(require 'scala-mode)
+(add-to-list 'auto-mode-alist '("\\.scala\\'" . scala-mode))
+(require 'scala-mode-auto)
+(add-to-list 'auto-mode-alist '("~/.emacs.d/ensime") )
+(require 'ensime)
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)

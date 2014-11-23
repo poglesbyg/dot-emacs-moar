@@ -1,0 +1,26 @@
+(import os)
+
+(if (os.path.isdir "/tmp/somedir")
+  (os.mkdir "/tmp/somedir/anotherdir")
+  (print "Hey, that path isn't there!"))
+
+(print "I was going to code in python syntax, but then I got hy.")
+(setv result (- (/ (+ 1 3 88) 2) 8))
+(print result)
+
+(defn simple-conversation []
+   (print "Hello!  I'd like to get to know you.  Tell me about yourself!")
+   (setv name (raw_input "What is your name? "))
+   (setv age (raw_input "What is your age? "))
+   (print (+ "Hello " name "!  I see you are "
+              age " years old.")))
+
+(simple-conversation)
+
+(for [i (range 10)]
+  (print (+ "'i' is now at " (str i))))
+
+(defn thunk []
+  "hy there")
+
+(apply thunk)

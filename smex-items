@@ -2,23 +2,29 @@
 ;; ----- smex-history -----
 (
  shell
- eval-buffer
+ ensime
  package-install
- clojure-mode-font-lock-setup
- paredit-mode
- run-prolog
- customize-group
+ eval-buffer
+ jade-mode
+ ensime-connect
+ package-refresh-contents
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 38)
- (shell . 5)
+ (eval-buffer . 56)
+ (shell . 16)
  (ebuffers . 1)
- (package-install . 17)
+ (package-install . 31)
  (cider-jack-in . 1)
  (customize-group . 1)
  (run-prolog . 1)
  (paredit-mode . 1)
  (clojure-mode-font-lock-setup . 1)
+ (package-refresh-contents . 2)
+ (hy-mode . 1)
+ (scala-mode . 3)
+ (ensime-connect . 1)
+ (ensime . 2)
+ (jade-mode . 1)
 )
